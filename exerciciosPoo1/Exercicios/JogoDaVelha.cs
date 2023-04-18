@@ -10,7 +10,7 @@ internal class JogoDaVelha
 {
     public static void Executar()
     {
-        Console.WriteLine("dps faço");
+        Console.WriteLine("");
 
     }
 }
