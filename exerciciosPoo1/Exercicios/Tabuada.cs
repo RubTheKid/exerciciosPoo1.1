@@ -4,20 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace exerciciosPoo1.Exercicios
+namespace exerciciosPoo1.Exercicios;
+
+internal class Tabuada
 {
-    internal class Tabuada
+    public static void Executar()
     {
-        public static void Executar()
+        Console.WriteLine("Insira o numero para a contagem: ");
+        int numero = int.Parse(Console.ReadLine());
+
+        for (int i = 1; i <= 10; i++)
         {
-            Console.WriteLine("Insira o numero para a contagem: ");
-            int numero = int.Parse(Console.ReadLine());
+            Console.WriteLine($"{numero} x {i} = {numero * i}");
 
-            for (int i = 1; i <= 10; i++)
-            {
-                Console.WriteLine($"{numero} x {i} = {numero * i}");
-
-            }
         }
     }
 }

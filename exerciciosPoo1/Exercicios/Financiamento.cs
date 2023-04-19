@@ -25,13 +25,8 @@ internal class Financiamento
         double valorFinanciar = valorVeiculo - valorEntrada;
 
         double parcelaAntesJuros = valorFinanciar / qtdParcelas;
+
         double parcelaComJuros = parcelaAntesJuros + (parcelaAntesJuros * juros / 100);
-
-        
-
-
-       // double parcelas = ((valorFinanciar / qtdParcelas) * juros/100);
-//        double parcelas = (valorFinanciar / qtdParcelas) * (juros / 100);
 
         double valorAserPago = parcelaComJuros * qtdParcelas;
 
